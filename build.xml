@@ -1,19 +1,19 @@
-<project name="com.jjw.personalwebsite build file" basedir="." default="all">
+<project name="personalwebsite build file" basedir="." default="all">
    <description>
-      This is the build file for the com.jjw.personalwebsite sub-component.
+      This is the build file for the personalwebsite sub-component.
    </description>
    <property environment="env" />
 
    <!-- Specify the cpc name -->
-   <property name="component" value="com.jjw.personalwebsite" />
+   <property name="component" value="personalwebsite" />
    <echo message="${component}" />
 
    <!-- Grab user's personal properties -->
    <property file="build.${env.USER}.properties" />
 
    <!-- Setup common properties -->
-   <property name="jjw.dir" value="${env.JJW_DIR}" />
-   <property name="common.dir" value="${jjw.dir}/common" />
+   <property name="workspace.dir" value="${env.WORKSPACE_HOME}" />
+   <property name="common.dir" value="${workspace.dir}/common" />
    <property file="${common.dir}/common-build.properties" />
    <property file="build.properties" />
 
@@ -74,7 +74,6 @@
    <!-- Target: war -->
    <target name="deploy-war">
       <copy file="${dist.dir}/jjw.war" todir="${deploy.bin.dir}" />
-      <copy file="${dist.dir}/jjw.war" todir="${tomcat.webapp.dir}" failonerror="false"/>
    </target>
 
    <!-- Target: Token-Replace -->
