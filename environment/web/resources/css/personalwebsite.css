@@ -1,0 +1,195 @@
+* {
+   color: #000000;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+body {
+   background: #fff;
+   font-family: 'Didact Gothic', sans-serif;
+   font-size: 34px;
+   letter-spacing: -1px;
+}
+
+h1,h2,h3,h4,h5 {
+   font-weight: normal;
+}
+
+/* -------------------------------- */
+/* Header */
+/* -------------------------------- */
+.header {
+   background-color: #ffffff;
+   border-color: gray;
+   border-style: solid;
+   border-width: 1px;
+   opacity: 1.0;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+}
+
+.header img {
+   margin-bottom: -2px;
+}
+
+.header h2 {
+   font-size: 70px;
+}
+
+.header lightgray {
+   color: #e5e5e5;
+}
+
+.header ul {
+   display: block;
+   font-size: 30px;
+   text-align: center;
+}
+
+.header ul li {
+   margin-right: 11px;
+   margin-bottom: 6px;
+   display: inline-block;
+}
+
+.header ul li a:hover {
+   text-decoration: none;
+   color: #e5e5e5;
+}
+
+.section#home h1 {
+   color: #0099ff;
+   font-size: 95px;
+   margin-top: 25%;
+}
+
+/* -------------------------------- */
+/* All sections */
+/* -------------------------------- */
+.section {
+   background-color: #e5e5e5;
+   height: 1600px;
+   width: 100%;
+   float: left;
+   text-align: center;
+   width: 100%;
+}
+
+.info {
+   background-color: #0099ff;
+   margin-top: 137px;
+   width: 100%;
+}
+
+.section h3,.section .info h3 a {
+   color: #e5e5e5;
+   font-size: 40px;
+   color: #e5e5e5;
+}
+
+.section p {
+   font-size: 17px;
+}
+/* -------------------------------- */
+/* Section: resume */
+/* -------------------------------- */
+.resumeDropDown {
+   background-color: #ffffff;
+   border-bottom: 1px;
+   border-top: 1px;
+   border-bottom-color: gray;
+   border-top-color: gray;
+   border-bottom-style: solid;
+   border-top-style: solid;
+   margin-top: 27px;
+   text-align: center;
+   width: 100%;
+}
+
+.resumeDropDown h4 {
+   color: #0099ff;
+   cursor: pointer;
+   font-size: 35px;
+   margin-bottom: 3px;
+}
+
+.resumeDropDown p {
+   display: none;
+   letter-spacing: 0px;
+   margin-bottom: 5px;
+   margin-left: 25%;
+   margin-top: 2px;
+   width: 50%;
+}
+
+.resumeDropDown h5 {
+   display: none;
+   font-size: 20px;
+   letter-spacing: 0px;
+}
+
+#skillsColumns {
+   margin: 0 auto;
+   overflow: auto;
+   width: 50%;
+}
+
+#skillsColumns .skillsColumn {
+   float: left;
+   margin: 0;
+   padding: 0;
+   width: 33.33%;
+}
+
+/* -------------------------------- */
+/* Section: lab */
+/* -------------------------------- */
+.labSection {
+   margin-top: 20px;
+}
+
+/* -------------------------------- */
+/* Section: photos */
+/* -------------------------------- */
+.gallery {
+   margin-top: 5px;
+}
+
+.popup-gallery {
+   margin-top: 15px;
+}
+
+/* -------------------------------- */
+/* Section: contact */
+/* -------------------------------- */
+.contactIcons {
+   margin-top: 40px;
+   margin-bottom: 5px;
+}
+
+.contactIcons a {
+   padding: 7px;
+}
+
+.location {
+   margin-top: 30px;
+}
+
+/* -------------------------------- */
+/* Section: footer */
+/* -------------------------------- */
+.footer {
+   border-color: gray;
+   border-style: solid;
+   border-width: 1px;
+   background-color: #ffffff;
+   bottom: 0;
+   color: #000000;
+   font-size: 15px;
+   height: 26px;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+}
