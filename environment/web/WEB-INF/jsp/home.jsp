@@ -17,9 +17,9 @@
       <h2>
          <a href="#home">
             <img alt="" src="/jjw/resources/images/jjwLogo_noBlur_50x50.png"></img>
-            <lightgray>&lt;</lightgray>
+            <span id="lightgray">&lt;</span>
             joshua wyse
-            <lightgray>/&gt;</lightgray>
+            <span id="lightgray">/&gt;</span>
          </a>
       </h2>
       <ul class="nav">
@@ -123,20 +123,7 @@
          <h3>projects I've been working on</h3>
       </div>
       <div class="labSection">
-         <div class="processing">
-            <h4>
-               <a href="http://processing.org/">Processing</a>
-               Sketches
-            </h4>
-            <div class="sketches">
-               <canvas id="jjwLogo" data-processing-sources="/jjw/resources/sketches/jjwLogo.pde"></canvas>
-            </div>
-         </div>
-      </div>
-      <div class="labSection">
-         <div class="java">
-            <h4>Java Projects</h4>
-         </div>
+         <h4>stay tuned...</h4>
       </div>
    </div>
    <div class="section" id="photos">
