@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>joshua wyse | software engineer</title>
+<title>Joshua Wyse | Software Engineer</title>
 <link rel="shortcut icon" href="/jjw/resources/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/jjw/resources/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="/jjw/resources/css/personalwebsite.css">
@@ -63,7 +63,7 @@
             </div>
             <div class="skillsColumn">
                <p>
-                  <b>frameworks</b> <br />camel<br /> grails <br /> jQuery <br />hibernate <br />spring core <br />
+                  <b>frameworks</b> <br />camel<br /> grails <br /> hibernate <br />jQuery <br />spring core <br />
                   spring mvc <br /> spring security <br />
                </p>
             </div>
