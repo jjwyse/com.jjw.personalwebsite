@@ -17,9 +17,7 @@
       <h2>
          <a href="#home">
             <img alt="" src="/jjw/resources/images/jjwLogo_noBlur_50x50.png"></img>
-            <span id="lightgray">&lt;</span>
-            joshua wyse
-            <span id="lightgray">/&gt;</span>
+            <span id="lightgray">&lt;</span> joshua wyse <span id="lightgray">/&gt;</span>
          </a>
       </h2>
       <ul class="nav">
@@ -48,11 +46,11 @@
       </div>
       <div class="resumeDropDown" id="aboutMe">
          <h4>about me</h4>
-         <p>hi, i'm josh. i am a software engineer with a passion for developing web applications and learning new
-            technologies. i have experience designing, architecting and implementing software solutions for a variety of
-            complex problems. i am always looking for new ways to solve problems by using technology and i love being
-            challenged. i am a great communicator who works equally well in teams, individually, and leading a team of
-            other engineers.</p>
+         <p>I am a software engineer with a passion for developing web applications and learning new technologies. I
+            have experience with the design, architecture and implementation of various software solutions for a variety
+            of complex problems. I enjoy challenges because they grant me the unique opportunity to explore the depths
+            of technology to find appropriate solutions. I communicate well with others and work equally well either
+            independently or on a team of engineers.</p>
       </div>
       <div class="resumeDropDown" id="skills">
          <h4>skills</h4>
@@ -80,42 +78,33 @@
       <div class="resumeDropDown" id="experience">
          <h4>experience</h4>
          <h5>
-            <b>raytheon company -- software engineer -- 2011-now</b>
+            <b>Raytheon Company -- Software Engineer II -- 2011-Now</b>
          </h5>
-         <p>
-            i started working in july of 2011 and was able to quickly contribute to my team's success. i worked
-            primarily on front-end ui and ux for my first team on a distributed, soa-based system. after obtaining my
-            security clearance, i transitioned to a new team where i played a major role in developing a brand new
-            distributed software component. this new piece of software was architected and implemented in a way that
-            made it re-usable across campus by other programs. i saw this new piece of software all the way through the
-            software development cycle, while supporting multiple other programs on how to get started using this new
-            piece of software. throughout this time, i was also still supporting my first team and able to play a large
-            role in getting the customer to go-live with our software system for the first time - a major milestone for
-            our company. because of all of my work on this new software component and support for other programs, i was
-            awarded <b>employee of the quarter</b> at our campus for the fourth quarter of 2012. i have received many
-            accolades for my ability to "get things done", "work well under pressure" and have a "great, can-do
-            attitude". i am currently designing and architecting a web application using a variety of different
-            technologies.
-         </p>
+         <p>I started working for Raytheon in July 2011 and I quickly contributed to my team's success. I worked
+            primarily on front-end UI and UX for a distributed, SOA-based system. I then obtained my security clearance,
+            and played a key role in developing a new distributed software component, which was built and implemented
+            for seamless integration across campus by other programs. From the initial concept phase to the final
+            implementation, I was involved with this new system throughout the entire software development cycle. During
+            this time, I also supported multiple other programs on how to use the new software and got the customer on
+            my first team to go-live with this software for the first time, which was a major milestone for the company.
+            I was awarded employee of the quarter at our campus for the fourth quarter of 2012 and I am currently
+            designing and building a web application using a variety of different technologies.</p>
          <h5>
-            <b>cerner corporation -- software engineer intern -- 2010</b>
+            <b>Cerner Corporation -- Software Engineer Intern -- 2010</b>
          </h5>
-         <p>i spent the summer after my junior year interning in kansas city. although i was only there for three
-            months, i was able to contribute towards my team's success in a variety of ways. i developed new
-            functionality for our software system in c++ and java, created python scripts for automated gui testing and
-            gave a presentation to a large group of people on how to use a new technology called sikuli. i was offered a
-            full-time position after my internship and was recognized for my efforts throughout the summer, specifically
-            in my great communication skills, great attitude and ability to work well with my team in such a short time.</p>
+         <p>While at Cerner Corporation, I developed new functionality for their software system in C++ and Java,
+            created Python scripts for automated GUI testing, and gave a presentation to an experienced audience of
+            engineers on how to use a new technology called Sikuli. The internship reinforced the importance of
+            communicating with peers and adapting to evolving technologies in the software development process.</p>
       </div>
       <div class="resumeDropDown" id="education">
          <h4>education</h4>
          <h5>
-            <b>miami university -- bs computer science -- 2007-2011</b>
+            <b>Miami University -- BS Computer Science -- 2007-2011</b>
          </h5>
-         <p>graduated cum laude in may of 2011. during my time at miami university, i was a teaching assistant in
-            the computer science department, selected to be part of the miami university summer scholar program, a
-            student manager at the miami university bookstore and selected to the leadership team for campus crusade for
-            christ.</p>
+         <p>I graduated Cum Laude in May 2011. During my time at Miami University, I was a Teaching Assistant in the
+            Computer Science department, a participant in the Summer Scholar program, a student manager at the Miami
+            University Bookstore and a designated leader for an on-campus ministry.</p>
       </div>
    </div>
    <div class="section" id="lab">
@@ -244,8 +233,7 @@
             <a href="/jjw/resources/images/2006/2006_1.jpg" title="AHS Basketball - State-Bound">
                <img src="/jjw/resources/images/2006/2006_1.jpg" width="75" height="75" />
             </a>
-            <a href="/jjw/resources/images/2006/2006_2.jpg"
-               title="Playing in Columbus Against OJ Mayo and Bill Walker">
+            <a href="/jjw/resources/images/2006/2006_2.jpg" title="Playing in Columbus Against OJ Mayo and Bill Walker">
                <img src="/jjw/resources/images/2006/2006_2.jpg" width="75" height="75" />
             </a>
             <a href="/jjw/resources/images/2006/2006_3.jpg" title="Brink, Tyson and I - Junior Year">
