@@ -150,6 +150,15 @@ h1,h2,h3,h4,h5 {
    margin-top: 20px;
 }
 
+.labSection p {
+   border-bottom: thin;
+   border-color: #0099ff;
+   border-bottom-width: 50px;
+   border-style: solid;
+   margin-bottom: 5px;
+   margin-top: 5px;
+}
+
 /* -------------------------------- */
 /* Section: photos */
 /* -------------------------------- */

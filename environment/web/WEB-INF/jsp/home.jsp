@@ -57,20 +57,20 @@
          <div id="skillsColumns">
             <div class="skillsColumn">
                <p>
-                  <b>languages</b> <br />css <br /> groovy<br />html5 <br />java<br />javascript <br /> perl <br />processing
-                  <br /> python <br /> shell scripting <br /> sql <br />
+                  <b>Languages</b> <br />CSS <br />Groovy <br />HTML5 <br />Java<br />Javascript <br />Perl <br />Processing
+                  <br />Python <br />Shell Scripting <br />SQL <br />
                </p>
             </div>
             <div class="skillsColumn">
                <p>
-                  <b>frameworks</b> <br />camel<br /> grails <br /> hibernate <br />jQuery <br />spring core <br />
-                  spring mvc <br /> spring security <br />
+                  <b>Frameworks</b> <br />Camel<br />Grails <br />Hibernate <br />jQuery <br />Spring Core <br />
+                  Spring MVC <br />Spring Security <br />
                </p>
             </div>
             <div class="skillsColumn">
                <p>
-                  <b>software</b><br /> ant <br /> activeMQ <br /> git <br /> glassfish <br />jenkins <br /> ldap
-                  <br />linux/unix <br /> mac os <br /> mySQL <br /> subversion <br /> tomcat <br />
+                  <b>Software</b><br />Ant <br />ActiveMQ <br />Git <br />Glassfish <br />Jenkins <br />LDAP <br />Linux/Unix
+                  <br />Mac OS <br />mySQL <br />Subversion <br />Tomcat <br />
                </p>
             </div>
          </div>
@@ -112,12 +112,16 @@
          <h3>projects I've been working on</h3>
       </div>
       <div class="labSection">
-         <h4>stay tuned...</h4>
+         <a href="http://joshuawyse.com/fellowshipgroups">
+            <h5>Fellowship Denver Church - Fellowship Groups</h5>
+         </a>
+         <p>A web app that is being developed for my church to show when and where Fellowship Groups meet throughout
+            the week</p>
       </div>
    </div>
    <div class="section" id="photos">
       <div class="info">
-         <h3>favorite photos and memories from each year</h3>
+         <h3>some favorite photos and memories</h3>
       </div>
       <div class="gallery">
          <div class="popup-gallery">
