@@ -4,7 +4,7 @@
   @author jjwyse
  */
 
-/* @pjs preload="/personalwebsite/resources/images/jjwLogo_noBlur_50x50.png"; */
+/* @pjs preload="/jjw/resources/images/jjwLogo_noBlur_50x50.png"; */
 
 // Global variables
 PImage img;
@@ -41,7 +41,7 @@ void draw()
   stroke(255);
   
   // Load in small logo image
-  img = loadImage("/personalwebsite/resources/images/jjwLogo_noBlur_50x50.png");
+  img = loadImage("/jjw/resources/images/jjwLogo_noBlur_50x50.png");
   
   // Draw circle
   image(img, X, Y);                  

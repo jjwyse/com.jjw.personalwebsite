@@ -1,3 +1,3 @@
 <div>
-   <h3>Internal Error</h3>
+   <h3>Uh oh...</h3>
 </div>

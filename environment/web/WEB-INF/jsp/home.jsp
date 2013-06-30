@@ -140,6 +140,14 @@
                have to be reminded of from stackoverflow daily.</p>
             <hr>
          </div>
+         <div class="labProject">
+            <hr>
+            <a href="http://joshuawyse.com/jjw/resources/sketches/sketches.html" target="_blank">
+               <h5>Processing Sketches</h5>
+            </a>
+            <p>Some <a href="http://processing.org/" target="_blank">Processing</a> sketches I've made over the years.</p>
+            <hr>
+         </div>
          <p>
             <i>All code can be found on <a href="http://github.com/jjwyse" target="_blank">Github</a>.
             </i>
