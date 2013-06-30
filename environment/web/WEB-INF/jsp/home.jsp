@@ -135,7 +135,7 @@
             <a href="http://joshuawyse-blog.appspot.com" target="_blank">
                <h5>Blog Web App</h5>
             </a>
-            <p>A Python web application running on the Google App Engine. Planning on turning this into a trip
+            <p>A Python web application using the webapp2 framework running on the Google App Engine. Planning on turning this into a trip
                report for all the great hikes the mrs. and I go on and a place to jot down all the software things I
                have to be reminded of from stackoverflow daily.</p>
             <hr>
