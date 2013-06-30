@@ -152,7 +152,6 @@ h1,h2,h3,h4,h5 {
 
 .labSection a {
    color: #0099ff;
-   text-decoration: underline;
 }
 
 .labSection a h5 {
@@ -160,7 +159,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .labSection p {
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    margin-left: 25%;
    margin-top: 5px;
    width: 50%;
@@ -171,6 +170,10 @@ h1,h2,h3,h4,h5 {
    margin-left: 22.5%;
    margin-top: 5px;
    width: 55%;
+}
+
+.labProject {
+   margin-bottom: 20px;
 }
 
 /* -------------------------------- */

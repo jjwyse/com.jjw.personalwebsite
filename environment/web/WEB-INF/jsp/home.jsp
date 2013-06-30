@@ -48,9 +48,8 @@
          <h4>about me</h4>
          <p>I am a software engineer with a passion for developing web applications and learning new technologies. I
             have experience with the design, architecture and implementation of various software solutions for a variety
-            of complex problems. I enjoy challenges because they grant me the unique opportunity to explore the depths
-            of technology to find appropriate solutions. I communicate well with others and work equally well either
-            independently or on a team of engineers.</p>
+            of complex problems. I communicate well with others and work equally well either independently or on a team
+            of engineers.</p>
       </div>
       <div class="resumeDropDown" id="skills">
          <h4>skills</h4>
@@ -112,29 +111,44 @@
          <h3>projects I've been working on</h3>
       </div>
       <div class="labSection">
-         <hr>
-         <a href="http://joshuawyse.com/fellowshipgroups" target="_blank">
-            <h5>Fellowship Denver Church - Fellowship Groups Web App</h5>
-         </a>
-         <p>A web app that I'm developing for my church to show when and where Fellowship Groups meet throughout the
-            week. Using Spring MVC, Apache Tiles, Google Maps API and mySQL.</p>
-         <hr>
-         <hr>
-         <a href="http://joshuawyse.com/addressbook" target="_blank">
-            <h5>Address Book Web Service</h5>
-         </a>
-         <p>A RESTful web service that is able to return people by their ID and add a new person to the data store.
-            Uses Spring MVC, jQuery and AJAX. Good app for myself to become more familiar with RESTful services and
-            AJAX.</p>
-         <hr>
+         <div class="labProject">
+            <hr>
+            <a href="http://joshuawyse.com/fellowshipgroups" target="_blank">
+               <h5>Fellowship Denver Church Web App</h5>
+            </a>
+            <p>A web app that I'm developing for my church to show when and where Fellowship Groups meet throughout
+               the week. Using Spring MVC, Apache Tiles, Google Maps API and mySQL.</p>
+            <hr>
+         </div>
+         <div class="labProject">
+            <hr>
+            <a href="http://joshuawyse.com/addressbook" target="_blank">
+               <h5>Address Book Web Service</h5>
+            </a>
+            <p>A RESTful web service that is able to return people by their ID and add a new person to the data
+               store. Uses Spring MVC, jQuery and AJAX. Good app for myself to become more familiar with RESTful
+               services and AJAX.</p>
+            <hr>
+         </div>
+         <div class="labProject">
+            <hr>
+            <a href="http://joshuawyse-blog.appspot.com" target="_blank">
+               <h5>Blog Web App</h5>
+            </a>
+            <p>A Python web application running on the Google App Engine. Planning on turning this into a trip
+               report for all the great hikes the mrs. and I go on and a place to jot down all the software things I
+               have to be reminded of from stackoverflow daily.</p>
+            <hr>
+         </div>
          <p>
-            <i>All code can be found on my <a href="http://github.com/jjwyse" target="_blank">Github account</a></i>
+            <i>All code can be found on <a href="http://github.com/jjwyse" target="_blank">Github</a>.
+            </i>
          </p>
       </div>
    </div>
    <div class="section" id="photos">
       <div class="info">
-         <h3>some favorite photos and memories</h3>
+         <h3>favorite photos and memories</h3>
       </div>
       <div class="gallery">
          <div class="popup-gallery">
