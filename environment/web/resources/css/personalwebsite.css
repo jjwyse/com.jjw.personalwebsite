@@ -150,13 +150,27 @@ h1,h2,h3,h4,h5 {
    margin-top: 20px;
 }
 
+.labSection a {
+   color: #0099ff;
+   text-decoration: underline;
+}
+
+.labSection a h5 {
+   color: #0099ff;
+}
+
 .labSection p {
-   border-bottom: thin;
-   border-color: #0099ff;
-   border-bottom-width: 50px;
-   border-style: solid;
    margin-bottom: 5px;
+   margin-left: 25%;
    margin-top: 5px;
+   width: 50%;
+}
+
+.labSection hr {
+   margin-bottom: 5px;
+   margin-left: 22.5%;
+   margin-top: 5px;
+   width: 55%;
 }
 
 /* -------------------------------- */

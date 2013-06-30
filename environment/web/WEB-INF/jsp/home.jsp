@@ -112,11 +112,24 @@
          <h3>projects I've been working on</h3>
       </div>
       <div class="labSection">
-         <a href="http://joshuawyse.com/fellowshipgroups">
-            <h5>Fellowship Denver Church - Fellowship Groups</h5>
+         <hr>
+         <a href="http://joshuawyse.com/fellowshipgroups" target="_blank">
+            <h5>Fellowship Denver Church - Fellowship Groups Web App</h5>
          </a>
-         <p>A web app that is being developed for my church to show when and where Fellowship Groups meet throughout
-            the week</p>
+         <p>A web app that I'm developing for my church to show when and where Fellowship Groups meet throughout the
+            week. Using Spring MVC, Apache Tiles, Google Maps API and mySQL.</p>
+         <hr>
+         <hr>
+         <a href="http://joshuawyse.com/addressbook" target="_blank">
+            <h5>Address Book Web Service</h5>
+         </a>
+         <p>A RESTful web service that is able to return people by their ID and add a new person to the data store.
+            Uses Spring MVC, jQuery and AJAX. Good app for myself to become more familiar with RESTful services and
+            AJAX.</p>
+         <hr>
+         <p>
+            <i>All code can be found on my <a href="http://github.com/jjwyse" target="_blank">Github account</a></i>
+         </p>
       </div>
    </div>
    <div class="section" id="photos">
