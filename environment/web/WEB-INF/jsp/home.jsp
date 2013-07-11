@@ -5,6 +5,7 @@
 <link rel="shortcut icon" href="/jjw/resources/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/jjw/resources/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="/jjw/resources/css/personalwebsite.css">
+<link rel="stylesheet" type="text/css" href="/jjw/resources/css/mobile.css">
 <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/jjw/resources/js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="/jjw/resources/js/jquery.easing-1.3.js"></script>
