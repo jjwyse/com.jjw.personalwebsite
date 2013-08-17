@@ -8,4 +8,5 @@ public interface PersonalWebsiteConstants
 
     // JSP Pages
     String HOME = "home";
+    String TEST_GUI = "testgui";
 }
