@@ -23,7 +23,8 @@
    });
    $(function()
    {
-      $("#selectable").bind("mousedown", function(e) {
+      $("#selectable").bind("mousedown", function(e)
+      {
          e.metaKey = true;
       }).selectable();
    });
@@ -54,9 +55,22 @@
 </head>
 <body>
    <div id="container">
-         <header>
-            <span id="green">josh</span><span id="white">wyse</span>
-         </header>
+      <header>
+         <div id="header">
+            <div class="alignleft">
+               <span id="green">josh</span><span id="white">wyse</span>
+            </div>
+            <div class="alignright">
+               <ol id="header-links">
+                  <a href="/one"> one</a>
+                  <a href="/two"> two</a>
+                  <a href="/three"> three</a>
+                  <a href="/four">four</a>
+               </ol>
+            </div>
+            <div style="clear: both;"></div>
+         </div>
+      </header>
       <div id="body">
          <ol id="selectable">
             <c:forEach var="type" items="${Types1}">
@@ -65,40 +79,14 @@
                </li>
             </c:forEach>
          </ol>
+         <div id="date-selector">
+            <input type="text" id="from" name="from" /> <input type="text" id="to" name="to" />
+         </div>
+         <br /> <input type="submit" value="Transfer" title="Click this button to initiate a transfer" />
       </div>
-         <footer>
-            <span id="green">&copy;</span> 2013 Joshua Wyse
-         </footer>
+      <footer>
+         <span id="green">&copy;</span> 2013 Joshua Wyse
+      </footer>
    </div>
-
-   <%--    
-   <label for="from">From</label>
-   <input type="text" id="from" name="from" />
-   <label for="to">to</label>
-   <input type="text" id="to" name="to" />
-
-   <br />
-   <br />
-   <br />
-
-   <button>A button element</button>
-   <input type="submit" value="A submit button" />
-
-   <p>
-      <a href="#" title="That's what this widget is">Tooltips</a>
-      can be attached to any element. When you hover the element with your mouse, the title attribute is displayed in a
-      little box next to the element, just like a native tooltip.
-   </p>
-   <p>
-      But as it's not a native tooltip, it can be styled. Any themes built with
-      <a href="http://themeroller.com" title="ThemeRoller: jQuery UI's theme builder application">ThemeRoller</a>
-      will also style tooltips accordingly.
-   </p>
-   <p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
-   <p>
-      <label for="age">Your age:</label> <input id="age" title="We ask for your age only for statistical purposes." />
-   </p>
-   <p>Hover the field to see the tooltip.</p>
- --%>
 </body>
 </html>

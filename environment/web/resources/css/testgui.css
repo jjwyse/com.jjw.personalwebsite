@@ -1,3 +1,4 @@
+/* Universal css rules */
 html,body {
    font-family: 'Didact Gothic', sans-serif;
    height: 100%;
@@ -13,6 +14,18 @@ html,body {
    color: #B4CD68;
 }
 
+a {
+   text-decoration: none;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
 /* Entire HTML body div container */
 #container {
    min-height: 100%;
@@ -20,15 +33,62 @@ html,body {
    height: 100%; /* IE 6 */
 }
 
-/* Entire header div */
+/* Entire header element*/
 header {
    background: #314455;
    font-size: 35px;
+   padding: 7px;
+}
+
+header #header-links {
+   display: inline;
+}
+
+header #header-links a {
+   color: white;
+   font-size: 25px;
+}
+
+header #header-links a:HOVER {
+   color: #B4CD68;
 }
 
 /* body div between the header and the footer */
 #body {
    padding-bottom: 18px; /* Height of the footer */
+}
+
+#selectable {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   margin-left: 25%;
+   margin-top: 20px;
+   text-align: center;
+   width: 50%;
+}
+
+#selectable li {
+   font-size: 22px;
+   padding: 8px;
+}
+
+#selectable .ui-selected,.ui-selecting {
+   background: #B4CD68;
+   color: white;
+}
+
+#date-selector {
+   margin-top: 40px;
+   text-align: center;
+}
+
+input[type=submit] {
+   margin: 0 auto;
+   margin-left: 35%;
+   margin-top: 10px;
+   text-align: center;
+   width: 30%;
 }
 
 /* footer div at the bottom of the page */
@@ -37,26 +97,9 @@ footer {
    bottom: 0;
    color: white;
    height: 18px; /* Height of the footer */
+   padding-bottom: 5px;
+   padding-top: 5px;
    position: absolute;
    text-align: center;
    width: 100%;
-}
-
-#selectable {
-   list-style-type: none;
-   text-align: center;
-   width: 50%;
-}
-
-#selectable li {
-   font-size: 22px;
-   height: 18px;
-   margin: 3px;
-   padding: 10px;
-   text-align: center;
-}
-
-#selectable .ui-selected,.ui-selecting {
-   background: #B4CD68;
-   color: white;
 }
