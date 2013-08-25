@@ -10,48 +10,65 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="/jjw/resources/css/testgui.css">
 <script>
-	$(function() {
-		$("input[type=submit], button").button().click(function(event) {
-			event.preventDefault();
-		});
-	});
-	$(function() {
-		$(document).tooltip();
-	});
-	$(function() {
-		$("#selectable").selectable();
-	});
-	$(function() {
-		$("#from").datepicker({
-			defaultDate : "+1w",
-			changeMonth : true,
-			numberOfMonths : 3,
-			onClose : function(selectedDate) {
-				$("#to").datepicker("option", "minDate", selectedDate);
-			}
-		});
-		$("#to").datepicker({
-			defaultDate : "+1w",
-			changeMonth : true,
-			numberOfMonths : 3,
-			onClose : function(selectedDate) {
-				$("#from").datepicker("option", "maxDate", selectedDate);
-			}
-		});
-	});
+   $(function()
+   {
+      $("input[type=submit], button").button().click(function(event)
+      {
+         event.preventDefault();
+      });
+   });
+   $(function()
+   {
+      $(document).tooltip();
+   });
+   $(function()
+   {
+      $("#selectable").selectable();
+   });
+   $(function()
+   {
+      $("#from").datepicker(
+      {
+         defaultDate : "+1w",
+         changeMonth : true,
+         numberOfMonths : 3,
+         onClose : function(selectedDate)
+         {
+            $("#to").datepicker("option", "minDate", selectedDate);
+         }
+      });
+      $("#to").datepicker(
+      {
+         defaultDate : "+1w",
+         changeMonth : true,
+         numberOfMonths : 3,
+         onClose : function(selectedDate)
+         {
+            $("#from").datepicker("option", "maxDate", selectedDate);
+         }
+      });
+   });
 </script>
 </head>
 <body>
-   <ol id="selectable">
-      <li class="ui-widget-content">Item 1</li>
-      <li class="ui-widget-content">Item 2</li>
-      <li class="ui-widget-content">Item 3</li>
-      <li class="ui-widget-content">Item 4</li>
-      <li class="ui-widget-content">Item 5</li>
-      <li class="ui-widget-content">Item 6</li>
-      <li class="ui-widget-content">Item 7</li>
-   </ol>
-
+   <header>
+      <h2>
+         <span id="green">the</span><span id="white">bridge</span>
+      </h2>
+   </header>
+   <div id="midder">
+      <ol id="selectable">
+         <c:forEach var="type" items="${Types1}">
+            <li class="ui-widget-content">
+               <c:out value="${type}" />
+            </li>
+         </c:forEach>
+      </ol>
+   </div>
+   <footer>
+      <p>&copy; 2013 Joshua Wyse</p>
+   </footer>
+<%--    
    <label for="from">From</label>
    <input type="text" id="from" name="from" />
    <label for="to">to</label>
@@ -76,9 +93,8 @@
    </p>
    <p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
    <p>
-      <label for="age">Your age:</label>
-      <input id="age" title="We ask for your age only for statistical purposes." />
+      <label for="age">Your age:</label> <input id="age" title="We ask for your age only for statistical purposes." />
    </p>
    <p>Hover the field to see the tooltip.</p>
-</body>
+ --%></body>
 </html>
