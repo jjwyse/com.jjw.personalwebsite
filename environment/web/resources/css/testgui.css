@@ -26,6 +26,15 @@ a {
    float: right;
 }
 
+input,li {
+   border-radius: 3px; /* Rounds the corner of input fields and list items */
+}
+
+label {
+   color: #314455;
+   text-align: left;
+}
+
 /* Entire HTML body div container */
 #container {
    min-height: 100%;
@@ -58,19 +67,29 @@ header #header-links a:HOVER {
    padding-bottom: 18px; /* Height of the footer */
 }
 
+#selectables {
+   margin: 0 auto;
+   position: relative;
+}
+
 #selectable {
+   list-style-position: inside;
    list-style-type: none;
    margin: 0;
    padding: 0;
-   margin-left: 25%;
    margin-top: 20px;
+   margin-left: 25%;
    text-align: center;
    width: 50%;
 }
 
 #selectable li {
+   border-color: #314455;
+   color: #314455;
    font-size: 22px;
+   margin: 3px;
    padding: 8px;
+   text-align: center;
 }
 
 #selectable .ui-selected,.ui-selecting {
@@ -78,12 +97,31 @@ header #header-links a:HOVER {
    color: white;
 }
 
-#date-selector {
+.parameters {
+   position: relative;
    margin-top: 40px;
    text-align: center;
 }
 
+.parameters+.parameters {
+   margin-top: 10px;
+}
+
+#selections {
+   border-color: #314455;
+   margin: 0 auto;
+   margin-top: 10px;
+   text-align: center;
+   font-size: 40px;
+}
+
+#selections input {
+   color: #314455;
+}
+
 input[type=submit] {
+   border-color: #314455;
+   color: #314455;
    margin: 0 auto;
    margin-left: 35%;
    margin-top: 10px;

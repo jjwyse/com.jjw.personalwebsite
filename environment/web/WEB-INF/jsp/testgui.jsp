@@ -23,6 +23,10 @@
    });
    $(function()
    {
+      $("#selections").buttonset();
+   });
+   $(function()
+   {
       $("#selectable").bind("mousedown", function(e)
       {
          e.metaKey = true;
@@ -32,9 +36,9 @@
    {
       $("#from").datepicker(
       {
-         defaultDate : "+1w",
+         defaultDate : "d",
          changeMonth : true,
-         numberOfMonths : 3,
+         numberOfMonths : 1,
          onClose : function(selectedDate)
          {
             $("#to").datepicker("option", "minDate", selectedDate);
@@ -42,9 +46,9 @@
       });
       $("#to").datepicker(
       {
-         defaultDate : "+1w",
+         defaultDate : "+1d",
          changeMonth : true,
-         numberOfMonths : 3,
+         numberOfMonths : 1,
          onClose : function(selectedDate)
          {
             $("#from").datepicker("option", "maxDate", selectedDate);
@@ -72,15 +76,33 @@
          </div>
       </header>
       <div id="body">
-         <ol id="selectable">
-            <c:forEach var="type" items="${Types1}">
-               <li class="ui-widget-content">
-                  <c:out value="${type}" />
-               </li>
-            </c:forEach>
-         </ol>
-         <div id="date-selector">
-            <input type="text" id="from" name="from" /> <input type="text" id="to" name="to" />
+         <div id="selections">
+            <input type="radio" id="selections1" name="radio" checked="checked" /><label for="selections1">Joshua
+               Wyse</label> <input type="radio" id="selections2" name="radio" /><label for="selections2">Laura Wyse</label>
+         </div>
+         <div id="selectables">
+            <ol id="selectable">
+               <c:forEach var="type" items="${Types1}">
+                  <li class="ui-state-default">
+                     <c:out value="${type}" />
+                  </li>
+               </c:forEach>
+            </ol>
+         </div>
+         <div class="parameters">
+            <label><b>Date Range:</b></label> 
+            <br /> 
+            <input type="text" id="from" name="from" placeholder="From Date" />
+            <input type="text" id="to" name="to" placeholder="To Date" />
+         </div>
+         <div class="parameters">
+            <label><b>Username:</b></label> 
+            <br /> 
+            <input type="text" id="user" name="user" placeholder="Username" />
+            <br /> 
+            <label><b>Version:</b></label> 
+            <br /> 
+            <input type="text" id="version" name="version" placeholder="Version" />
          </div>
          <br /> <input type="submit" value="Transfer" title="Click this button to initiate a transfer" />
       </div>
