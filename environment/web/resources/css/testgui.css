@@ -1,63 +1,51 @@
-* {
-   color: #000000;
-}
-
-body {
-   background: #FFFFFF;
+html,body {
    font-family: 'Didact Gothic', sans-serif;
+   height: 100%;
+   margin: 0;
+   padding: 0;
 }
 
-header {
-   background: #314455;
-   height: 55px;
-   width: 100%;
-}
-
-header h2 {
-   font-size: 30px;
-   padding: 12px;
-   margin-top: 12px;
-}
-
-header h2 #white {
+#white {
    color: white;
 }
 
-header h2 #green {
+#green {
    color: #B4CD68;
 }
 
-#midder {
-   background: #D5E5F4;
+/* Entire HTML body div container */
+#container {
+   min-height: 100%;
+   position: relative;
+   height: 100%; /* IE 6 */
 }
 
+/* Entire header div */
+header {
+   background: #314455;
+   font-size: 35px;
+}
+
+/* body div between the header and the footer */
+#body {
+   padding-bottom: 18px; /* Height of the footer */
+}
+
+/* footer div at the bottom of the page */
 footer {
    background: #314455;
-   height: 25px;
-   width: 100%;
-}
-
-footer p {
+   bottom: 0;
    color: white;
-   font-size: 15px;
-   padding: 5px;
+   height: 18px; /* Height of the footer */
+   position: absolute;
    text-align: center;
-}
-
-label {
-   display: inline-block;
-   width: 5em;
-}
-
-#feedback {
-   font-size: 1.4em;
+   width: 100%;
 }
 
 #selectable {
    list-style-type: none;
-   margin: 0;
-   padding: 0;
-   width: 60%;
+   text-align: center;
+   width: 50%;
 }
 
 #selectable li {
@@ -68,7 +56,7 @@ label {
    text-align: center;
 }
 
-#selectable .ui-selected,.ui-selecting{
+#selectable .ui-selected,.ui-selecting {
    background: #B4CD68;
    color: white;
 }

@@ -51,24 +51,25 @@
 </script>
 </head>
 <body>
-   <header>
-      <h2>
-         <span id="green">the</span><span id="white">bridge</span>
-      </h2>
-   </header>
-   <div id="midder">
-      <ol id="selectable">
-         <c:forEach var="type" items="${Types1}">
-            <li class="ui-widget-content">
-               <c:out value="${type}" />
-            </li>
-         </c:forEach>
-      </ol>
+   <div id="container">
+         <header>
+            <span id="green">josh</span><span id="white">wyse</span>
+         </header>
+      <div id="body">
+         <ol id="selectable">
+            <c:forEach var="type" items="${Types1}">
+               <li class="ui-widget-content">
+                  <c:out value="${type}" />
+               </li>
+            </c:forEach>
+         </ol>
+      </div>
+         <footer>
+            <span id="green">&copy;</span> 2013 Joshua Wyse
+         </footer>
    </div>
-   <footer>
-      <p>&copy; 2013 Joshua Wyse</p>
-   </footer>
-<%--    
+
+   <%--    
    <label for="from">From</label>
    <input type="text" id="from" name="from" />
    <label for="to">to</label>
@@ -96,5 +97,6 @@
       <label for="age">Your age:</label> <input id="age" title="We ask for your age only for statistical purposes." />
    </p>
    <p>Hover the field to see the tooltip.</p>
- --%></body>
+ --%>
+</body>
 </html>
