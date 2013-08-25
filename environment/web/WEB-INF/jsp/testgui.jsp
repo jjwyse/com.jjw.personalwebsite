@@ -23,7 +23,9 @@
    });
    $(function()
    {
-      $("#selectable").selectable();
+      $("#selectable").bind("mousedown", function(e) {
+         e.metaKey = true;
+      }).selectable();
    });
    $(function()
    {
