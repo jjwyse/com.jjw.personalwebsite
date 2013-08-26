@@ -90,6 +90,7 @@
                   </li>
                </c:forEach>
             </ol>
+            <div style="clear: both;"></div>
          </div>
          <div id="fields">
          <div class="parameters">

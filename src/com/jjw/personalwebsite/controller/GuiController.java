@@ -29,8 +29,8 @@ public class GuiController extends PersonalWebsiteControllerAbs
     {
         LOG.info("Handling GET request in test GUI");
 
-        model.put("Types1",
-                Arrays.<String> asList("Type 1", "Type 2", "Type 3", "Type 4", "Type 5", "Type 6", "Type 7", "Type 8"));
+        model.put("Types1", Arrays.<String> asList("Type 1", "Type 2", "Type 3", "Type 4", "Type 5", "Type 6",
+                "Type 7", "Type 8", "Type 9", "Type 10", "Type 11"));
         model.put("Types2", Arrays.<String> asList("Type 1"));
 
         return TEST_GUI;

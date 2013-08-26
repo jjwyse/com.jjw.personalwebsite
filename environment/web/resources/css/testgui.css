@@ -83,10 +83,8 @@ header #header-links a:HOVER {
 #selectable {
    list-style-position: inside;
    list-style-type: none;
-   margin: 0;
-   padding: 0;
+   margin: 0 auto;
    margin-top: 20px;
-   margin-left: 25%;
    text-align: center;
    width: 50%;
 }
@@ -96,9 +94,12 @@ header #header-links a:HOVER {
    color: #314455;
    cursor: pointer;
    font-size: 22px;
+   float: left;
    margin: 3px;
    padding: 8px;
    text-align: center;
+   width: 100px;
+   height: 100px;
 }
 
 #selectable .ui-selected,.ui-selecting {
@@ -116,7 +117,7 @@ header #header-links a:HOVER {
    margin-top: 10px;
 }
 
-#radio {
+/*#radio {
    margin-top: 10px;
    text-align: center;
    font-size: 30px;
@@ -131,7 +132,7 @@ header #header-links a:HOVER {
 #radio .ui-state-active {
    background: #B4CD68;
    color: white;
-}
+}*/
 
 input[type=submit] {
    border-color: #314455;
