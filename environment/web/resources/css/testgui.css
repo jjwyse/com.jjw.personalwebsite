@@ -4,6 +4,14 @@ html,body {
    height: 100%;
    margin: 0;
    padding: 0;
+   
+   /* Makes text NOT selectabe -- looks cleaner */
+   -webkit-user-select: none; /* Chrome/Safari */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* IE10+ */
+   /* Rules below not implemented in browsers yet */
+   -o-user-select: none;
+   user-select: none;
 }
 
 #white {
@@ -86,6 +94,7 @@ header #header-links a:HOVER {
 #selectable li {
    border-color: #314455;
    color: #314455;
+   cursor: pointer;
    font-size: 22px;
    margin: 3px;
    padding: 8px;
@@ -107,16 +116,21 @@ header #header-links a:HOVER {
    margin-top: 10px;
 }
 
-#selections {
-   border-color: #314455;
-   margin: 0 auto;
+#radio {
    margin-top: 10px;
    text-align: center;
-   font-size: 40px;
+   font-size: 30px;
 }
 
-#selections input {
+#radio .ui-button {
+   border-color: #314455;
+   border-width: 1px;
    color: #314455;
+}
+
+#radio .ui-state-active {
+   background: #B4CD68;
+   color: white;
 }
 
 input[type=submit] {

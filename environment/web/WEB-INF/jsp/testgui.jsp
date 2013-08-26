@@ -23,7 +23,7 @@
    });
    $(function()
    {
-      $("#selections").buttonset();
+      $("#radio").buttonset();
    });
    $(function()
    {
@@ -76,11 +76,13 @@
          </div>
       </header>
       <div id="body">
-         <div id="selections">
-            <input type="radio" id="selections1" name="radio" checked="checked" /><label for="selections1">Joshua
-               Wyse</label> <input type="radio" id="selections2" name="radio" /><label for="selections2">Laura Wyse</label>
+<!--          <div id="radio">
+            <label for="radio1">Selection 1</label> 
+            <input class="radioButton" type="radio" id="radio1" name="radio" checked="checked" />
+            <label for="radio2">Selection 2</label>
+            <input class="radioButton" type="radio" id="radio2" name="radio" />
          </div>
-         <div id="selectables">
+ -->         <div id="selectables">
             <ol id="selectable">
                <c:forEach var="type" items="${Types1}">
                   <li class="ui-state-default">
@@ -89,11 +91,12 @@
                </c:forEach>
             </ol>
          </div>
+         <div id="fields">
          <div class="parameters">
             <label><b>Date Range:</b></label> 
             <br /> 
-            <input type="text" id="from" name="from" placeholder="From Date" />
-            <input type="text" id="to" name="to" placeholder="To Date" />
+            <input type="text" id="from" name="from" placeholder="From" />
+            <input type="text" id="to" name="to" placeholder="To" />
          </div>
          <div class="parameters">
             <label><b>Username:</b></label> 
@@ -104,10 +107,11 @@
             <br /> 
             <input type="text" id="version" name="version" placeholder="Version" />
          </div>
+         </div>
          <br /> <input type="submit" value="Transfer" title="Click this button to initiate a transfer" />
       </div>
       <footer>
-         <span id="green">&copy;</span> 2013 Joshua Wyse
+         <span id="white">&copy;</span> <span id="green">2013 Joshua Wyse</span>
       </footer>
    </div>
 </body>
