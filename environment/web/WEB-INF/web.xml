@@ -53,5 +53,4 @@
       <location>/WEB-INF/jsp/exception.jsp</location>
    </error-page>
 
-
 </web-app>
