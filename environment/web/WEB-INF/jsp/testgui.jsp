@@ -74,7 +74,7 @@
             </div>
             <div class="alignright">
                <ol id="header-links">
-                  <a href="/one"> one</a>
+                  <a href="${pageContext.request.contextPath}/testgui/login"> login</a>
                   <a href="/two"> two</a>
                   <a href="/three"> three</a>
                   <a href="/four">four</a>

@@ -38,6 +38,20 @@ public class GuiController extends PersonalWebsiteControllerAbs
     }
 
     /**
+     * Handles the incoming GET requests to [base_url]/testgui/login
+     * 
+     * @param model The model to pass back to the view
+     * @return The view to display
+     */
+    @RequestMapping(value = { "/testgui/login" }, method = RequestMethod.GET)
+    public String getTestGuiLog(ModelMap model)
+    {
+        LOG.info("Handling GET request in test GUI");
+
+        return TEST_GUI + "_login";
+    }
+
+    /**
      * Handles the incoming POST requests to [base_url]/testgui/transfer
      * 
      * @return The view to display
