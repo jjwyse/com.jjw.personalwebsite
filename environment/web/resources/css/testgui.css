@@ -14,71 +14,48 @@ html,body {
    user-select: none;
 }
 
-#white {
-   color: white;
-}
-
-#green {
-   color: #B4CD68;
-}
-
-a {
-   text-decoration: none;
-}
-
-.alignleft {
-   float: left;
-}
-
-.alignright {
-   float: right;
-}
-
-input,li {
-   border-radius: 3px; /* Rounds the corner of input fields and list items */
-}
-
-label {
+input[type=submit] {
+   border-color: #314455;
    color: #314455;
-   text-align: left;
+   margin: 0 auto;
+   margin-left: 35%;
+   margin-top: 10px;
+   text-align: center;
+   width: 30%;
 }
+
+input[type=text] { font-size: 25px; }
+
+#white { color: white; }
+
+#green { color: #B4CD68; }
+
+a { text-decoration: none; }
+
+.alignleft { float: left; }
+
+.alignright { float: right; }
+
+input,li { border-radius: 3px; /* Rounds the corner of input fields and list items */ }
+
+label { color: #314455; text-align: left; }
 
 /* Entire HTML body div container */
-#container {
-   min-height: 100%;
-   position: relative;
-   height: 100%; /* IE 6 */
-}
+#container { min-height: 100%; position: relative; height: 100%; }
 
-/* Entire header element*/
-header {
-   background: #314455;
-   font-size: 35px;
-   padding: 7px;
-}
+/* header element*/
+header { background: #314455; font-size: 35px; padding: 7px; }
 
-header #header-links {
-   display: inline;
-}
+header #header-links { display: inline; }
 
-header #header-links a {
-   color: white;
-   font-size: 25px;
-}
+header #header-links a { color: white; font-size: 25px; }
 
-header #header-links a:HOVER {
-   color: #B4CD68;
-}
+header #header-links a:HOVER { color: #B4CD68; }
 
-/* body div between the header and the footer */
-#body {
-   padding-bottom: 18px; /* Height of the footer */
-}
+/* body div (lies between header and footer */
+#body { padding-bottom: 18px; /* Height of the footer */ }
 
-#selectables {
-   margin: 0 auto;
-   position: relative;
-}
+#selectables { margin: 0 auto; position: relative; }
 
 #selectable {
    list-style-position: inside;
@@ -86,7 +63,7 @@ header #header-links a:HOVER {
    margin: 0 auto;
    margin-top: 20px;
    text-align: center;
-   width: 50%;
+   width: 800px;
 }
 
 #selectable li {
@@ -102,49 +79,21 @@ header #header-links a:HOVER {
    height: 100px;
 }
 
-#selectable .ui-selected,.ui-selecting {
-   background: #B4CD68;
-   color: white;
-}
+#selectable .ui-selected,.ui-selecting { background: #B4CD68; color: white; }
 
-.parameters {
-   position: relative;
-   margin-top: 40px;
-   text-align: center;
-}
+.parameters { position: relative; margin-top: 40px; text-align: center; }
 
-.parameters+.parameters {
-   margin-top: 10px;
-}
+.parameters+.parameters { margin-top: 10px; }
 
-/*#radio {
-   margin-top: 10px;
-   text-align: center;
-   font-size: 30px;
-}
+/*
+#radio { margin-top: 10px; text-align: center; font-size: 30px; }
 
-#radio .ui-button {
-   border-color: #314455;
-   border-width: 1px;
-   color: #314455;
-}
+#radio .ui-button { border-color: #314455; border-width: 1px; color: #314455; }
 
-#radio .ui-state-active {
-   background: #B4CD68;
-   color: white;
-}*/
+#radio .ui-state-active { background: #B4CD68; color: white; }
+*/
 
-input[type=submit] {
-   border-color: #314455;
-   color: #314455;
-   margin: 0 auto;
-   margin-left: 35%;
-   margin-top: 10px;
-   text-align: center;
-   width: 30%;
-}
-
-/* footer div at the bottom of the page */
+/* footer element */
 footer {
    background: #314455;
    bottom: 0;

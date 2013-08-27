@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -55,6 +57,12 @@
          }
       });
    });
+   function transfer()
+   {
+      $.post('${pageContext.request.contextPath}/testgui', $("#transferForm").serialize(),function(data) {
+         alert("Data Loaded: " + data);
+      });
+   }
 </script>
 </head>
 <body>
@@ -76,40 +84,38 @@
          </div>
       </header>
       <div id="body">
-<!--          <div id="radio">
-            <label for="radio1">Selection 1</label> 
-            <input class="radioButton" type="radio" id="radio1" name="radio" checked="checked" />
-            <label for="radio2">Selection 2</label>
-            <input class="radioButton" type="radio" id="radio2" name="radio" />
-         </div>
- -->         <div id="selectables">
-            <ol id="selectable">
-               <c:forEach var="type" items="${Types1}">
-                  <li class="ui-state-default">
-                     <c:out value="${type}" />
-                  </li>
-               </c:forEach>
-            </ol>
-            <div style="clear: both;"></div>
-         </div>
-         <div id="fields">
-         <div class="parameters">
-            <label><b>Date Range:</b></label> 
+         <form id="transferForm" method="post">   
+            <div id="selectables">
+               <ol id="selectable">
+                  <c:forEach var="type" items="${Types1}">
+                     <li class="ui-state-default">
+                        <c:out value="${type}" />
+                     </li>
+                  </c:forEach>
+               </ol>
+               <div style="clear: both;"></div>
+            </div>
+            <div id="fields">
+               <div class="parameters">
+                  <label for="from"><b>Date Range:</b></label> 
+                  <br /> 
+                  <input type="text" id="from" name="from" placeholder="From" />
+                  <input type="text" id="to" name="to" placeholder="To" />
+               </div>
+               <div class="parameters">
+                  <label for="user"><b>Username:</b></label> 
+                  <br /> 
+                  <input type="text" id="user" name="user" placeholder="Username" />
+                  <br /> 
+                  <label for="version"><b>Version:</b></label> 
+                  <br /> 
+                  <input type="text" id="version" name="version" placeholder="Version" />
+               </div>
+            </div>
             <br /> 
-            <input type="text" id="from" name="from" placeholder="From" />
-            <input type="text" id="to" name="to" placeholder="To" />
-         </div>
-         <div class="parameters">
-            <label><b>Username:</b></label> 
-            <br /> 
-            <input type="text" id="user" name="user" placeholder="Username" />
-            <br /> 
-            <label><b>Version:</b></label> 
-            <br /> 
-            <input type="text" id="version" name="version" placeholder="Version" />
-         </div>
-         </div>
-         <br /> <input type="submit" value="Transfer" title="Click this button to initiate a transfer" />
+            <input type="submit" value="Transfer" title="Initiate a transfer" onclick="transfer()" />
+         </form>
+         <div id="transferFormResponse" />
       </div>
       <footer>
          <span id="white">&copy;</span> <span id="green">2013 Joshua Wyse</span>
