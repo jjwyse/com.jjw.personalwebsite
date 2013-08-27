@@ -31,10 +31,10 @@
             </div>
             <div class="alignright">
                <ol id="header-links">
-                  <a href="/one"> one</a>
-                  <a href="/two"> two</a>
-                  <a href="/three"> three</a>
-                  <a href="/four">four</a>
+                  <a href="${pageContext.request.contextPath}/testgui/one"> one</a>
+                  <a href="${pageContext.request.contextPath}/testgui/two"> two</a>
+                  <a href="${pageContext.request.contextPath}/testgui/three"> three</a>
+                  <a href="${pageContext.request.contextPath}/testgui/four">four</a>
                </ol>
             </div>
             <div style="clear: both;"></div>

@@ -30,11 +30,38 @@ public class GuiController extends PersonalWebsiteControllerAbs
     {
         LOG.info("Handling GET request in test GUI");
 
-        model.put("Types1", Arrays.<String> asList("Type 1", "Type 2", "Type 3", "Type 4", "Type 5", "Type 6",
-                "Type 7", "Type 8", "Type 9", "Type 10", "Type 11"));
-        model.put("Types2", Arrays.<String> asList("Type 1"));
+        model.put("Types1", Arrays.<String> asList("Tigers", "Giants", "Cardinals", "RedSox", "WhiteSox", "BlueJays",
+                "Rockies", "Indians", "Twins", "Yankees", "Mets"));
 
         return TEST_GUI;
+    }
+
+    /**
+     * Handles the incoming GET requests to [base_url]/testgui/one
+     * 
+     * @param model The model to pass back to the view
+     * @return The view to display
+     */
+    @RequestMapping(value = { "/testgui/one" }, method = RequestMethod.GET)
+    public String getTestGuiOne(ModelMap model)
+    {
+        LOG.info("Handling GET request in test GUI");
+
+        return TEST_GUI + "_login";
+    }
+
+    /**
+     * Handles the incoming GET requests to [base_url]/testgui/two
+     * 
+     * @param model The model to pass back to the view
+     * @return The view to display
+     */
+    @RequestMapping(value = { "/testgui/two" }, method = RequestMethod.GET)
+    public String getTestGuiTwo(ModelMap model)
+    {
+        LOG.info("Handling GET request in test GUI");
+
+        return TEST_GUI + "_login";
     }
 
     /**
@@ -43,8 +70,22 @@ public class GuiController extends PersonalWebsiteControllerAbs
      * @param model The model to pass back to the view
      * @return The view to display
      */
-    @RequestMapping(value = { "/testgui/login" }, method = RequestMethod.GET)
-    public String getTestGuiLog(ModelMap model)
+    @RequestMapping(value = { "/testgui/three" }, method = RequestMethod.GET)
+    public String getTestGuiThree(ModelMap model)
+    {
+        LOG.info("Handling GET request in test GUI");
+
+        return TEST_GUI + "_login";
+    }
+
+    /**
+     * Handles the incoming GET requests to [base_url]/testgui/four
+     * 
+     * @param model The model to pass back to the view
+     * @return The view to display
+     */
+    @RequestMapping(value = { "/testgui/four" }, method = RequestMethod.GET)
+    public String getTestGuiFour(ModelMap model)
     {
         LOG.info("Handling GET request in test GUI");
 
@@ -58,104 +99,38 @@ public class GuiController extends PersonalWebsiteControllerAbs
      */
     @RequestMapping(value = { "/testgui" }, method = RequestMethod.POST)
     @ResponseBody
-    public String getPostGui()
+    public String getPostGui(TransferForm transferForm, ModelMap model)
     {
-        LOG.info("Handling POST request in test GUI");
+        LOG.info("Handling POST request in test GUI for transfer form: " + transferForm);
 
-        return "Successfully initiated transfer of data for transfer form";
+        clearModelMap(model);
+
+        return "Successfully transferred data";
     }
 
-    public class TransferForm
+    private void clearModelMap(ModelMap model)
     {
-        // Map<String, Boolean> transferTypes;
-        String user;
-        String version;
-        String from;
-        String to;
+        model.put("toDate", "");
+        model.put("fromDate", "");
+        model.put("user", "");
+        model.put("version", "");
+    }
 
-        /**
-         * @return the user
-         */
-        public String getUser()
-        {
-            return user;
-        }
+    /**
+     * 
+     * @param transferForm
+     * @return
+     */
+    private String buildSuccessString(TransferForm transferForm)
+    {
+        StringBuilder stringBuilder = new StringBuilder();
 
-        /**
-         * @param user the user to set
-         */
-        public void setUser(String user)
-        {
-            this.user = user;
-        }
+        stringBuilder.append("Successfully transferred data:").append("\n");
+        stringBuilder.append(" " + transferForm.getFromDate()).append(" - ").append(transferForm.getToDate())
+                .append("\n");
+        stringBuilder.append("  user    : " + transferForm.getUser()).append("\n");
+        stringBuilder.append("  version : " + transferForm.getVersion()).append("\n");
 
-        /**
-         * @return the version
-         */
-        public String getVersion()
-        {
-            return version;
-        }
-
-        /**
-         * @param version the version to set
-         */
-        public void setVersion(String version)
-        {
-            this.version = version;
-        }
-
-        /**
-         * @return the from
-         */
-        public String getFrom()
-        {
-            return from;
-        }
-
-        /**
-         * @param from the from to set
-         */
-        public void setFrom(String from)
-        {
-            this.from = from;
-        }
-
-        /**
-         * @return the to
-         */
-        public String getTo()
-        {
-            return to;
-        }
-
-        /**
-         * @param to the to to set
-         */
-        public void setTo(String to)
-        {
-            this.to = to;
-        }
-
-        /*
-         * (non-Javadoc)
-         * 
-         * @see java.lang.Object#toString()
-         */
-        @Override
-        public String toString()
-        {
-            StringBuilder builder = new StringBuilder();
-            builder.append("TransferForm [user=");
-            builder.append(user);
-            builder.append(", version=");
-            builder.append(version);
-            builder.append(", from=");
-            builder.append(from);
-            builder.append(", to=");
-            builder.append(to);
-            builder.append("]");
-            return builder.toString();
-        }
+        return stringBuilder.toString();
     }
 }

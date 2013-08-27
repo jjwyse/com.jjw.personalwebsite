@@ -17,6 +17,24 @@
       $("input[type=submit], button").button().click(function(event)
       {
          event.preventDefault();
+
+         var isValid = isFormValid();
+         if (!isValid)
+         {
+            return false;   
+         }
+
+         /* Get the selected types, put them in an array and then serialize form back to server */
+         var selectedTypes = getSelectedTransferTypes();
+         var transferTypes = [];
+         for (var i = 0; i < selectedTypes.length; i++) {
+            transferTypes.push(selectedTypes[i].innerHTML);
+         }
+
+         var serializedForm = $("#transferForm").serialize() + "&transferTypes=" + transferTypes;
+         $.post('${pageContext.request.contextPath}/testgui', serializedForm ,function(response) {
+            $('#transferFormResponse').text(response);
+         });
       });
    });
    $(function()
@@ -36,32 +54,66 @@
    });
    $(function()
    {
-      $("#from").datepicker(
+      $("#fromDate").datepicker(
       {
          defaultDate : "d",
          changeMonth : true,
          numberOfMonths : 1,
          onClose : function(selectedDate)
          {
-            $("#to").datepicker("option", "minDate", selectedDate);
+            $("#toDate").datepicker("option", "minDate", selectedDate);
          }
       });
-      $("#to").datepicker(
+      $("#toDate").datepicker(
       {
          defaultDate : "+1d",
          changeMonth : true,
          numberOfMonths : 1,
          onClose : function(selectedDate)
          {
-            $("#from").datepicker("option", "maxDate", selectedDate);
+            $("#fromDate").datepicker("option", "maxDate", selectedDate);
          }
       });
    });
-   function transfer()
+
+   /*
+   * Checks to see if the form is valid before posting it
+   */
+   function isFormValid()
    {
-      $.post('${pageContext.request.contextPath}/testgui', $("#transferForm").serialize(),function(data) {
-         alert("Data Loaded: " + data);
-      });
+      var response = true;
+      var result = $( "#transferFormResponse" ).empty();
+      if (getSelectedTransferTypes().length <= 0)
+      {
+         result.append("* Must select at least one type <br/>");
+         response = false;
+      }
+      
+      var fromDate = $( "#fromDate" ).datepicker( "getDate" );
+      var toDate = $( "#toDate" ).datepicker( "getDate" );
+      if(!fromDate || !toDate)
+      {
+          result.append("* Fill out both the to date and from date <br/>");
+          response = false;
+      }
+      
+      if (!response)
+      {
+         result.addClass("red");
+      }
+      else
+      {
+         result.removeClass("red");
+      }
+      return response;
+   }
+   
+   /*
+   * Returns the different selected types we want to transfer
+   */
+   function getSelectedTransferTypes()
+   {
+      return $( "#selectable .ui-selected" ).toArray();
    }
 </script>
 </head>
@@ -74,21 +126,21 @@
             </div>
             <div class="alignright">
                <ol id="header-links">
-                  <a href="${pageContext.request.contextPath}/testgui/login"> login</a>
-                  <a href="/two"> two</a>
-                  <a href="/three"> three</a>
-                  <a href="/four">four</a>
+                  <a href="${pageContext.request.contextPath}/testgui/one"> one</a>
+                  <a href="${pageContext.request.contextPath}/testgui/two"> two</a>
+                  <a href="${pageContext.request.contextPath}/testgui/three"> three</a>
+                  <a href="${pageContext.request.contextPath}/testgui/four">four</a>
                </ol>
             </div>
             <div style="clear: both;"></div>
          </div>
       </header>
       <div id="body">
-         <form id="transferForm" method="post">   
+         <form id="transferForm" method="post" >
             <div id="selectables">
                <ol id="selectable">
                   <c:forEach var="type" items="${Types1}">
-                     <li class="ui-state-default">
+                     <li id="li_${type}" class="ui-state-default">
                         <c:out value="${type}" />
                      </li>
                   </c:forEach>
@@ -97,25 +149,25 @@
             </div>
             <div id="fields">
                <div class="parameters">
-                  <label for="from"><b>Date Range:</b></label> 
+                  <label for="fromDate"><b>Date Range:</b></label> 
                   <br /> 
-                  <input type="text" id="from" name="from" placeholder="From" />
-                  <input type="text" id="to" name="to" placeholder="To" />
+                  <input type="text" id="fromDate" name="fromDate" placeholder="From" value="${fromDate}"/>
+                  <input type="text" id="toDate" name="toDate" placeholder="To" value="${toDate}"/>
                </div>
                <div class="parameters">
                   <label for="user"><b>Username:</b></label> 
                   <br /> 
-                  <input type="text" id="user" name="user" placeholder="Username" />
+                  <input type="text" id="user" name="user" placeholder="Username" value="${username}"/>
                   <br /> 
                   <label for="version"><b>Version:</b></label> 
                   <br /> 
-                  <input type="text" id="version" name="version" placeholder="Version" />
+                  <input type="text" id="version" name="version" placeholder="Version" value="${version}" />
                </div>
             </div>
             <br /> 
-            <input type="submit" value="Transfer" title="Initiate a transfer" onclick="transfer()" />
+            <input type="submit" value="Transfer" title="Initiate a transfer" />
          </form>
-         <div id="transferFormResponse" />
+         <div id="transferFormResponse" ></div>
       </div>
       <footer>
          <span id="white">&copy;</span> <span id="green">2013 Joshua Wyse</span>
