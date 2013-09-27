@@ -78,19 +78,26 @@
       <div class="resumeDropDown" id="experience">
          <h4>experience</h4>
          <h5>
-            <b>Raytheon Company -- Software Engineer II -- 2011-Now</b>
+            <b><a href="http://www.cloud-elements.com" target="_blank">Cloud Elements</a> -- Software Engineer --
+               2013-Now</b>
          </h5>
-         <p>I started working for Raytheon in July 2011 and I quickly contributed to my team's success. I worked
-            primarily on front-end UI and UX for a distributed, SOA-based system. I then obtained my security clearance,
-            and played a key role in developing a new distributed software component, which was built and implemented
-            for seamless integration across campus by other programs. From the initial concept phase to the final
-            implementation, I was involved with this new system throughout the entire software development cycle. During
+         <p>I joined Cloud Elements in October of 2013 and look forward to working with this amazing team!</p>
+         <h5>
+            <b><a href="http://www.raytheon.com" target="_blank">Raytheon Company</a> -- Software Engineer II --
+               2011-2013</b>
+         </h5>
+         <p>While at Raytheon, I initially worked on front-end UI and UX for a distributed, SOA-based system. I then
+            obtained my security clearance, and played a key role in developing a new distributed software component,
+            which was built and implemented on multiple programs across campus. I was involved with this new system
+            throughout the entire software development cycle, primarily during implementation and integration. During
             this time, I also supported multiple other programs on how to use the new software and got the customer on
             my first team to go-live with this software for the first time, which was a major milestone for the company.
-            I was awarded employee of the quarter at our campus for the fourth quarter of 2012 and I am currently
-            designing and building a web application using a variety of different technologies.</p>
+            Because of all of these efforts, I was awarded Employee of the Quarter at our campus for the fourth quarter
+            of 2012. I have also spent a large amount of time designing, architecting and implenting a Spring MVC web
+            application using a variety of different technologies.</p>
          <h5>
-            <b>Cerner Corporation -- Software Engineer Intern -- 2010</b>
+            <b><a href="http://www.cerner.com" target="_blank">Cerner Corporation</a> -- Software Engineer Intern --
+               2010</b>
          </h5>
          <p>While at Cerner Corporation, I developed new functionality for their software system in C++ and Java,
             created Python scripts for automated GUI testing, and gave a presentation to an experienced audience of
